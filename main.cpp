@@ -34,9 +34,9 @@ vector<string> parserow(string s) {
 
 const bool DEBUG = false;
 
-int main()
+int main() // Example code. Input file must be formatted similarly to the provided one.
 {
-    ifstream fin("a.in");
+    ifstream fin("rareprotogens.in");
     string s;
     
     vector<vector<bool>> mat;
