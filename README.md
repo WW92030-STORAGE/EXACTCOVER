@@ -1,2 +1,4 @@
 # EXACTCOVER
-Exact Cover Problem!
+Exact Cover Problem! <br/>
+
+Knuth's DLX algorithm using Dancing Links.
