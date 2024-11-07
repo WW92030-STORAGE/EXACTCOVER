@@ -53,12 +53,12 @@ int main() // Example code. Input file must be formatted similarly to the provid
         vector<string> a = parserow(s);
         names.push_back(a[0]);
         if (DEBUG) {
-        // cout << a[0] << " = ";
+        cout << a[0] << " = ";
         for (int i = 1; i < a.size(); i++) cout << a[i] << " ";
         cout << endl;
         }
         vector<bool> row;
-        for (int i = 1; i < a.size() - 1; i++) row.push_back(a[i] == "1");
+        for (int i = 1; i < a.size(); i++) row.push_back(a[i] == "1");
         mat.push_back(row);
     }
     
@@ -68,7 +68,7 @@ int main() // Example code. Input file must be formatted similarly to the provid
     cout << dlx.solve(0) << endl;
     
     for (int i = 0; i < dlx.sol.size(); i++) {
-        cout << (dlx.sol[i]->row - 1) << " (XSLX " << (dlx.sol[i]->row + NUM_INACTIVE) << ") = " << names[dlx.sol[i]->row - 1] << endl;
+        cout << (dlx.sol[i]->row - 1) << " = " << names[dlx.sol[i]->row - 1] << endl;
     }
     return 0;
 }
