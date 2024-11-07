@@ -40,7 +40,7 @@ vector<string> parserow(string s) {
             continue;
         }
     }
-    res.push_back(s.substr(prev + 1, s.length() - prev));
+    res.push_back(s.substr(prev + 1));
     return res;
 }
 
@@ -61,10 +61,10 @@ int main() // Example code. Input file must be formatted similarly to the provid
         if (DEBUG) {
         cout << a[0] << " = ";
         for (int i = 1; i < a.size(); i++) cout << a[i] << " ";
-        cout << endl;
+        cout << "\\" << endl;
         }
         vector<bool> row;
-        for (int i = 1; i < a.size(); i++) row.push_back(a[i] == "1");
+        for (int i = 1; i < a.size(); i++) row.push_back((a[i][0] != '0'));
         mat.push_back(row);
     }
     
