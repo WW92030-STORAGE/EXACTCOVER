@@ -7,6 +7,12 @@ using namespace std;
 
 #include <chrono>
 
+// HOW TO USE
+
+// Input file is csv. Lines with two slashes at the beginning (//) are comments and ignored.
+// Each line has same number of entries which is N + 1. First entry is name and is only used for row identification.
+// The remaining N entries denote the subset corresponding to that row and are used in calculating the cover.
+
 // CONSTANTS
 
 #define NUM_INACTIVE 2
