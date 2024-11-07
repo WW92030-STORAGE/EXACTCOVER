@@ -7,6 +7,12 @@ using namespace std;
 
 #include <chrono>
 
+// CONSTANTS
+
+#define NUM_INACTIVE 2
+
+
+
 void cover_matdisp(std::vector<std::vector<bool>>& mat, std::set<int>& rows, std::set<int>& cols) {
     for (int i = 0; i < mat.size(); i++) {
         for (int j = 0; j < mat[i].size(); j++) {
@@ -52,7 +58,7 @@ int main() // Example code. Input file must be formatted similarly to the provid
         cout << endl;
         }
         vector<bool> row;
-        for (int i = 1; i < a.size(); i++) row.push_back(a[i] == "1");
+        for (int i = 1; i < a.size() - 1; i++) row.push_back(a[i] == "1");
         mat.push_back(row);
     }
     
@@ -62,7 +68,7 @@ int main() // Example code. Input file must be formatted similarly to the provid
     cout << dlx.solve(0) << endl;
     
     for (int i = 0; i < dlx.sol.size(); i++) {
-        cout << (dlx.sol[i]->row - 1) << " (XSLX " << (dlx.sol[i]->row + 2) << ") = " << names[dlx.sol[i]->row - 1] << endl;
+        cout << (dlx.sol[i]->row - 1) << " (XSLX " << (dlx.sol[i]->row + NUM_INACTIVE) << ") = " << names[dlx.sol[i]->row - 1] << endl;
     }
     return 0;
 }
