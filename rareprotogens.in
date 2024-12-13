@@ -1,5 +1,5 @@
 // Lines with the 2 slashes at the start will be ignored (must be the first 2 chars)
-// This table is a list of 140 Rare Protogens and their Rare Traits. (Last updated 11/19/2024)
+// This table is a list of 141 Rare Protogens and their Rare Traits. (Last updated 12/12/2024)
 GIGER,1,0,1,0,1,0,0,0,0,0,0
 SORATOBU-BA,0,0,0,0,1,0,0,0,0,0,0
 ROICEID,1,0,0,0,1,0,0,0,0,0,0
@@ -142,14 +142,4 @@ CREATOR,0,0,0,0,0,0,1,0,0,0,0
 IRRIDIUIS,1,0,1,0,0,0,1,0,0,0,0
 C6H8O2,0,0,0,0,1,0,1,1,0,0,0
 ALICE WEBBER,1,1,0,0,1,0,1,0,0,0,1
-KET00,1,0,0,0,0,0,0,0,0,0,0
-KET01,0,1,0,0,0,0,0,0,0,0,0
-KET02,0,0,1,0,0,0,0,0,0,0,0
-KET03,0,0,0,1,0,0,0,0,0,0,0
-KET04,0,0,0,0,1,0,0,0,0,0,0
-KET05,0,0,0,0,0,1,0,0,0,0,0
-KET06,0,0,0,0,0,0,1,0,0,0,0
-KET07,0,0,0,0,0,0,0,1,0,0,0
-KET08,0,0,0,0,0,0,0,0,1,0,0
-KET09,0,0,0,0,0,0,0,0,0,1,0
-KET10,0,0,0,0,0,0,0,0,0,0,1
+BIOGENTIC,1,0,1,0,1,0,1,0,1,1,0
